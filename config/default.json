@@ -1,0 +1,149 @@
+{
+  "servers": [
+    {
+      "name": "ql-sth-01 #1",
+      "hostname": "5.150.254.201",
+      "port": 27960,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #2",
+      "hostname": "5.150.254.201",
+      "port": 27961,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #3",
+      "hostname": "5.150.254.201",
+      "port": 27962,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #4",
+      "hostname": "5.150.254.201",
+      "port": 27963,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #5",
+      "hostname": "5.150.254.201",
+      "port": 27964,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #6",
+      "hostname": "5.150.254.201",
+      "port": 27965,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #7",
+      "hostname": "5.150.254.201",
+      "port": 27966,
+      "password": ""
+    },
+    {
+      "name": "ql-sth-01 #8",
+      "hostname": "5.150.254.201",
+      "port": 27967,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #1",
+      "hostname": "95.85.18.150",
+      "port": 27960,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #2",
+      "hostname": "95.85.18.150",
+      "port": 27961,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #3",
+      "hostname": "95.85.18.150",
+      "port": 27962,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #4",
+      "hostname": "95.85.18.150",
+      "port": 27963,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #5",
+      "hostname": "95.85.18.150",
+      "port": 27964,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #6",
+      "hostname": "95.85.18.150",
+      "port": 27965,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #7",
+      "hostname": "95.85.18.150",
+      "port": 27966,
+      "password": ""
+    },
+    {
+      "name": "ql-ams-01 #8",
+      "hostname": "95.85.18.150",
+      "port": 27967,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #1",
+      "hostname": "46.101.227.252",
+      "port": 27960,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #2",
+      "hostname": "46.101.227.252",
+      "port": 27961,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #3",
+      "hostname": "46.101.227.252",
+      "port": 27962,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #4",
+      "hostname": "46.101.227.252",
+      "port": 27963,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #5",
+      "hostname": "46.101.227.252",
+      "port": 27964,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #6",
+      "hostname": "46.101.227.252",
+      "port": 27965,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #7",
+      "hostname": "46.101.227.252",
+      "port": 27966,
+      "password": ""
+    },
+    {
+      "name": "ql-fr-01 #8",
+      "hostname": "46.101.227.252",
+      "port": 27967,
+      "password": ""
+    }
+  ]
+
+}
