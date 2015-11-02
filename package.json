@@ -1,0 +1,27 @@
+{
+  "name": "ql-stats-engine",
+  "version": "0.0.0",
+  "description": "",
+  "main": "subscribe.js",
+  "dependencies": {
+    "mongodb": "^2.0.47",
+    "redis": "^2.3.0",
+    "config": "^1.16.0",
+    "zmq": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node subscribe.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swallentin/ql-stats-engine.git"
+  },
+  "author": "Stephan Wallentin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swallentin/ql-stats-engine/issues"
+  },
+  "homepage": "https://github.com/swallentin/ql-stats-engine#readme"
+}
