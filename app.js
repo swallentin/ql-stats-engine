@@ -56,7 +56,7 @@ MongoClient.connect(url, function (err, db) {
                         if (document.TYPE === 'PLAYER_CONNECT') {
                             client.publish("user_connected", document.DATA.STEAM_ID);
                             client.sadd('online_players', document.DATA.STEAM_ID);
-                            client.sadd('players', document.DATA.KILLER.STEAM_ID);
+                            client.sadd('players', document.DATA.STEAM_ID);
                         }
                         else if (document.TYPE === 'PLAYER_DISCONNECT') {
                             client.srem('online_players', document.DATA.STEAM_ID);
