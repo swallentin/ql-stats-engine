@@ -15,7 +15,9 @@ function makeConnectionString(host) {
 }
 
 MongoClient.connect(url, function (err, db) {
-    var collection = db.collection('events');
+    var events = db.collection('events'),
+        players = db.collection('players'),
+        matches = db.collection('matches');
 
 
     servers.forEach(function (server)  {
@@ -35,42 +37,33 @@ MongoClient.connect(url, function (err, db) {
                 document.SERVER = server;
                 document.EVENT_TIME = new Date();
 
-
                 if(document) {
-
                     if(document.TYPE === 'MATCH_STARTED') {
-                        console.log('Added', document.DATA.MATCH_GUID, 'to current_matches');
-                        client.hmset('match:' + document.DATA.MATCH_GUID, document.DATA);
+                        // add document to mongodb matches collection
+                        matches.insert(document);
                         client.sadd('current_matches', document.DATA.MATCH_GUID);
-
-                        client.sadd('matches', document.DATA.MATCH_GUID);
+                        client.publish("match_started", document.DATA.MATCH_GUID);
                     } else if (document.TYPE === 'MATCH_REPORT') {
-                        console.log('Removed', document.DATA.MATCH_GUID, 'from current_matches');
+                        // update mongodb matches collection with match report
+                        players.update({ "DATA.MATCH_GUID": document.DATA.MATCH_GUID }, document);
+                        client.sadd('matches', document.DATA.MATCH_GUID);
                         client.srem('current_matches', document.DATA.MATCH_GUID);
-                    } else if (document.type === 'PLAYER_SWITCHTEAM') {
-                        client.sadd('online_players', document.DATA.KILLER.STEAM_ID);
-                    } else if (document.TYPE === 'PLAYER_CONNECT' || document.TYPE === 'PLAYER_DISCONNECT') {
-                        console.log('hmset user:', document.DATA.STEAM_ID);
-                        client.hmset('user:' + document.DATA.STEAM_ID, document.DATA);
-
-                        if (document.TYPE === 'PLAYER_CONNECT') {
-                            client.publish("user_connected", document.DATA.STEAM_ID);
-                            client.sadd('online_players', document.DATA.STEAM_ID);
-                            client.sadd('players', document.DATA.STEAM_ID);
-                        }
-                        else if (document.TYPE === 'PLAYER_DISCONNECT') {
-                            client.srem('online_players', document.DATA.STEAM_ID);
-                            client.publish("user_disconnected", document.DATA.STEAM_ID);
-                        }
-
+                        client.publish("match_completed", document.DATA.MATCH_GUID);
+                    } else if (document.TYPE === 'PLAYER_CONNECT') {
+                        // add user to online players
+                        client.sadd('online_players', document.DATA.STEAM_ID);
+                        // update or create user in mongodb
+                        players.update({ "DATA.STEAM_ID": document.DATA.STEAM_ID }, document, { upsert: true });
+                        client.sadd('players', document.DATA.STEAM_ID);
+                        client.publish("user_connected", document.DATA.STEAM_ID);
+                    }
+                    else if (document.TYPE === 'PLAYER_DISCONNECT') {
+                        client.srem('online_players', document.DATA.STEAM_ID);
+                        client.publish("user_disconnected", document.DATA.STEAM_ID);
                     }
 
-
-
-
-                    collection.insert(document, function () {
-                        console.log(server.name, document.TYPE);
-                    });
+                    events.insert(document);
+                    console.log(server.name, document.TYPE);
 
                 }
 
