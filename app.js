@@ -45,7 +45,7 @@ MongoClient.connect(url, function (err, db) {
                         client.publish("match_started", document.DATA.MATCH_GUID);
                     } else if (document.TYPE === 'MATCH_REPORT') {
                         // update mongodb matches collection with match report
-                        players.update({ "DATA.MATCH_GUID": document.DATA.MATCH_GUID }, document);
+                        matches.update({ "DATA.MATCH_GUID": document.DATA.MATCH_GUID }, document);
                         client.sadd('matches', document.DATA.MATCH_GUID);
                         client.srem('current_matches', document.DATA.MATCH_GUID);
                         client.publish("match_completed", document.DATA.MATCH_GUID);
