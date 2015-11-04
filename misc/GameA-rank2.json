@@ -1,0 +1,222 @@
+{
+	"DATA" : {
+		"ABORTED" : false,
+		"DAMAGE" : {
+			"DEALT" : 679,
+			"TAKEN" : 1266
+		},
+		"DEATHS" : 7,
+		"ITEM_TIMING" : {
+			"GREEN_ARMOR" : 19800,
+			"MEGA_HEALTH" : 0,
+			"YELLOW_ARMOR" : 12887
+		},
+		"KILLS" : 0,
+		"LOSE" : 1,
+		"MATCH_GUID" : "89ab75f8-6e45-4fd0-a417-88161bec621a",
+		"MAX_STREAK" : 0,
+		"MEDALS" : {
+			"ACCURACY" : 0,
+			"ASSISTS" : 0,
+			"CAPTURES" : 0,
+			"COMBOKILL" : 0,
+			"DEFENDS" : 0,
+			"EXCELLENT" : 0,
+			"FIRSTFRAG" : 0,
+			"HEADSHOT" : 0,
+			"HUMILIATION" : 0,
+			"IMPRESSIVE" : 0,
+			"MIDAIR" : 0,
+			"PERFECT" : 0,
+			"PERFORATED" : 0,
+			"QUADGOD" : 0,
+			"RAMPAGE" : 0,
+			"REVENGE" : 0
+		},
+		"MODEL" : "doom/sport_blue",
+		"NAME" : "xi^4nnn^7",
+		"PICKUPS" : {
+			"AMMO" : 3,
+			"ARMOR" : 19,
+			"ARMOR_REGEN" : 0,
+			"BATTLESUIT" : 0,
+			"DOUBLER" : 0,
+			"FLIGHT" : 0,
+			"GREEN_ARMOR" : 4,
+			"GUARD" : 0,
+			"HASTE" : 0,
+			"HEALTH" : 8,
+			"INVIS" : 0,
+			"INVULNERABILITY" : 0,
+			"KAMIKAZE" : 0,
+			"MEDKIT" : 0,
+			"MEGA_HEALTH" : 1,
+			"OTHER_HOLDABLE" : 0,
+			"OTHER_POWERUP" : 0,
+			"PORTAL" : 0,
+			"QUAD" : 0,
+			"RED_ARMOR" : 0,
+			"REGEN" : 0,
+			"SCOUT" : 0,
+			"TELEPORTER" : 0,
+			"YELLOW_ARMOR" : 4
+		},
+		"PLAY_TIME" : 245,
+		"QUIT" : 0,
+		"RANK" : 2,
+		"SCORE" : -999,
+		"STEAM_ID" : "76561198059489229",
+		"TIED_RANK" : 0,
+		"WARMUP" : false,
+		"WEAPONS" : {
+			"BFG" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"CHAINGUN" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"GAUNTLET" : {
+				"D" : 1,
+				"DG" : 0,
+				"DR" : 70,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 5
+			},
+			"GRENADE" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 1,
+				"S" : 0,
+				"T" : 0
+			},
+			"HMG" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"LIGHTNING" : {
+				"D" : 2,
+				"DG" : 114,
+				"DR" : 342,
+				"H" : 19,
+				"K" : 0,
+				"P" : 2,
+				"S" : 98,
+				"T" : 14
+			},
+			"MACHINEGUN" : {
+				"D" : 0,
+				"DG" : 55,
+				"DR" : 0,
+				"H" : 11,
+				"K" : 0,
+				"P" : 0,
+				"S" : 38,
+				"T" : 106
+			},
+			"NAILGUN" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"OTHER_WEAPON" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"PLASMA" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 2,
+				"S" : 43,
+				"T" : 10
+			},
+			"PROXMINE" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			},
+			"RAILGUN" : {
+				"D" : 1,
+				"DG" : 0,
+				"DR" : 280,
+				"H" : 0,
+				"K" : 0,
+				"P" : 1,
+				"S" : 1,
+				"T" : 4
+			},
+			"ROCKET" : {
+				"D" : 3,
+				"DG" : 510,
+				"DR" : 542,
+				"H" : 11,
+				"K" : 0,
+				"P" : 6,
+				"S" : 32,
+				"T" : 103
+			},
+			"SHOTGUN" : {
+				"D" : 0,
+				"DG" : 0,
+				"DR" : 0,
+				"H" : 0,
+				"K" : 0,
+				"P" : 0,
+				"S" : 0,
+				"T" : 0
+			}
+		},
+		"WIN" : 0
+	},
+	"TYPE" : "PLAYER_STATS",
+	"SERVER" : {
+		"name" : "ql-fr-01 #2",
+		"hostname" : "46.101.227.252",
+		"port" : 27961,
+		"password" : ""
+	},
+}

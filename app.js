@@ -17,7 +17,8 @@ function makeConnectionString(host) {
 MongoClient.connect(url, function (err, db) {
     var events = db.collection('events'),
         players = db.collection('players'),
-        matches = db.collection('matches');
+        matches = db.collection('matches'),
+        reports = db.collections('reports');
 
 
     servers.forEach(function (server)  {
