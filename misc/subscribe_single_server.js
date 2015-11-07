@@ -1,6 +1,6 @@
 // subber.js
 var zmq = require('zmq'),
-    socket = zmq.socket('sub'),
+    socket = zmq.stats_socket('sub'),
     MongoClient = require('mongodb').MongoClient,
     url = 'mongodb://localhost:27017/ql-stats';
 

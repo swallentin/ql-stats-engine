@@ -216,7 +216,7 @@
 	"SERVER" : {
 		"name" : "ql-fr-01 #2",
 		"hostname" : "46.101.227.252",
-		"port" : 27961,
-		"password" : ""
+		"stats_port": 27961,
+		"stats_password": ""
 	},
 }

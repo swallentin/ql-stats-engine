@@ -2,7 +2,7 @@
 var zmq = require('zmq'),
     sockets = [],
     config = require('config'),
-    servers = config.get('servers'),
+    settings = config.get('settings'),
     MongoClient = require('mongodb').MongoClient,
     redis = require("redis"),
     client = redis.createClient(),
@@ -16,7 +16,7 @@ var zmq = require('zmq'),
     elo = new Elo(uscf);
 
 function makeConnectionString(host) {
-    return ['tcp://', host.hostname, ':', host.port].join('');
+    return ['tcp://', host.hostname, ':', host.stats_port].join('');
 }
 
 MongoClient.connect(url, function (err, db) {
@@ -27,10 +27,9 @@ MongoClient.connect(url, function (err, db) {
         player_stats = db.collection('player_stats');
 
 
-    servers.forEach(function (server)  {
+    settings.servers.forEach(function (server)  {
         var socket = zmq.socket('sub'),
         address = makeConnectionString(server);
-
         socket.connect(address);
         socket.subscribe('');
         sockets.push(socket);

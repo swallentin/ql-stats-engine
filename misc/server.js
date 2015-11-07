@@ -1,5 +1,5 @@
 var zmq = require('zmq'),
-    socket = zmq.socket('req'),
+    socket = zmq.stats_socket('req'),
     counter = 0;
 
 

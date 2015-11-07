@@ -1,5 +1,5 @@
 var zmq = require('zmq'),
-    socket = zmq.socket('rep');
+    socket = zmq.stats_socket('rep');
 
 function logToConsole (message) {
     console.log("[" + new Date().toLocaleTimeString() + "] " + message);
