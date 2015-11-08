@@ -16,7 +16,7 @@
     "servers": [
       {
         "name": "ql-sth-01 #1 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27960,
         "rcon_port": 28960,
         "rcon_password": "",
@@ -25,7 +25,7 @@
       },
       {
         "name": "ql-sth-01 #2 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27961,
         "rcon_port": 28961,
         "rcon_password": "",
@@ -34,7 +34,7 @@
       },
       {
         "name": "ql-sth-01 #3 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27962,
         "rcon_port": 28962,
         "rcon_password": "",
@@ -43,7 +43,7 @@
       },
       {
         "name": "ql-sth-01 #4 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27963,
         "rcon_port": 28963,
         "rcon_password": "",
@@ -52,7 +52,7 @@
       },
       {
         "name": "ql-sth-01 #5 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27964,
         "rcon_port": 28964,
         "rcon_password": "",
@@ -61,7 +61,7 @@
       },
       {
         "name": "ql-sth-01 #6 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27965,
         "rcon_port": 28965,
         "rcon_password": "",
@@ -70,7 +70,7 @@
       },
       {
         "name": "ql-sth-01 #7 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27966,
         "rcon_port": 28966,
         "rcon_password": "",
@@ -79,7 +79,7 @@
       },
       {
         "name": "ql-sth-01 #8 #topdog.io",
-        "hostname": "5.150.254.201",
+        "hostname": "ql-sth-01.topdog.io",
         "gameport": 27967,
         "rcon_port": 28967,
         "rcon_password": "",
@@ -88,7 +88,7 @@
       },
       {
         "name": "ql-ams-01 #1 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27960,
         "rcon_port": 28960,
         "rcon_password": "",
@@ -97,7 +97,7 @@
       },
       {
         "name": "ql-ams-01 #2 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27961,
         "rcon_port": 28961,
         "rcon_password": "",
@@ -106,7 +106,7 @@
       },
       {
         "name": "ql-ams-01 #3 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27962,
         "rcon_port": 28962,
         "rcon_password": "",
@@ -115,7 +115,7 @@
       },
       {
         "name": "ql-ams-01 #4 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27962,
         "rcon_port": 28962,
         "rcon_password": "",
@@ -124,7 +124,7 @@
       },
       {
         "name": "ql-ams-01 #5 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27964,
         "rcon_port": 28964,
         "rcon_password": "",
@@ -133,7 +133,7 @@
       },
       {
         "name": "ql-ams-01 #6 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27965,
         "rcon_port": 28965,
         "rcon_password": "",
@@ -142,7 +142,7 @@
       },
       {
         "name": "ql-ams-01 #7 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27966,
         "rcon_port": 28966,
         "rcon_password": "",
@@ -151,7 +151,7 @@
       },
       {
         "name": "ql-ams-01 #8 #topdog.io",
-        "hostname": "95.85.18.150",
+        "hostname": "ql-ams-01.topdog.io",
         "gameport": 27967,
         "rcon_port": 28967,
         "rcon_password": "",
@@ -160,7 +160,7 @@
       },
       {
         "name": "ql-fr-01 #1 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27960,
         "rcon_port": 28960,
         "rcon_password": "",
@@ -169,7 +169,7 @@
       },
       {
         "name": "ql-fr-01 #2 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27961,
         "rcon_port": 28961,
         "rcon_password": "",
@@ -178,7 +178,7 @@
       },
       {
         "name": "ql-fr-01 #3 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27962,
         "rcon_port": 28962,
         "rcon_password": "",
@@ -187,7 +187,7 @@
       },
       {
         "name": "ql-fr-01 #4 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27963,
         "rcon_port": 28963,
         "rcon_password": "",
@@ -196,7 +196,7 @@
       },
       {
         "name": "ql-fr-01 #5 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27964,
         "rcon_port": 28964,
         "rcon_password": "",
@@ -205,7 +205,7 @@
       },
       {
         "name": "ql-fr-01 #6 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27965,
         "rcon_port": 28965,
         "rcon_password": "",
@@ -214,7 +214,7 @@
       },
       {
         "name": "ql-fr-01 #7 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27966,
         "rcon_port": 28966,
         "rcon_password": "",
@@ -223,7 +223,7 @@
       },
       {
         "name": "ql-fr-01 #8 #topdog.io",
-        "hostname": "46.101.227.252",
+        "hostname": "ql-fr-01.topdog.io",
         "gameport": 27967,
         "rcon_port": 28967,
         "rcon_password": "",
