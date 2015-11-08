@@ -6,6 +6,7 @@
   "dependencies": {
     "arpad": "^0.1.0",
     "config": "^1.16.0",
+    "log4js": "^0.6.27",
     "mongodb": "^2.0.47",
     "redis": "^2.3.0",
     "zmq": "^2.13.0"
