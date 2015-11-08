@@ -15,7 +15,7 @@
     },
     "servers": [
       {
-        "name": "ql-sth-01 #1",
+        "name": "ql-sth-01 #1 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27960,
         "rcon_port": 28960,
@@ -24,7 +24,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #2",
+        "name": "ql-sth-01 #2 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27961,
         "rcon_port": 28961,
@@ -33,7 +33,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #3",
+        "name": "ql-sth-01 #3 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27962,
         "rcon_port": 28962,
@@ -42,7 +42,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #4",
+        "name": "ql-sth-01 #4 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27963,
         "rcon_port": 28963,
@@ -51,7 +51,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #5",
+        "name": "ql-sth-01 #5 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27964,
         "rcon_port": 28964,
@@ -60,7 +60,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #6",
+        "name": "ql-sth-01 #6 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27965,
         "rcon_port": 28965,
@@ -69,7 +69,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #7",
+        "name": "ql-sth-01 #7 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27966,
         "rcon_port": 28966,
@@ -78,7 +78,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-sth-01 #8",
+        "name": "ql-sth-01 #8 #topdog.io",
         "hostname": "5.150.254.201",
         "gameport": 27967,
         "rcon_port": 28967,
@@ -87,7 +87,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #1",
+        "name": "ql-ams-01 #1 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27960,
         "rcon_port": 28960,
@@ -96,7 +96,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #2",
+        "name": "ql-ams-01 #2 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27961,
         "rcon_port": 28961,
@@ -105,7 +105,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #3",
+        "name": "ql-ams-01 #3 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27962,
         "rcon_port": 28962,
@@ -114,7 +114,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #4",
+        "name": "ql-ams-01 #4 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27962,
         "rcon_port": 28962,
@@ -123,7 +123,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #5",
+        "name": "ql-ams-01 #5 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27964,
         "rcon_port": 28964,
@@ -132,7 +132,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #6",
+        "name": "ql-ams-01 #6 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27965,
         "rcon_port": 28965,
@@ -141,7 +141,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #7",
+        "name": "ql-ams-01 #7 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27966,
         "rcon_port": 28966,
@@ -150,7 +150,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-ams-01 #8",
+        "name": "ql-ams-01 #8 #topdog.io",
         "hostname": "95.85.18.150",
         "gameport": 27967,
         "rcon_port": 28967,
@@ -159,7 +159,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #1",
+        "name": "ql-fr-01 #1 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27960,
         "rcon_port": 28960,
@@ -168,7 +168,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #2",
+        "name": "ql-fr-01 #2 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27961,
         "rcon_port": 28961,
@@ -177,7 +177,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #3",
+        "name": "ql-fr-01 #3 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27962,
         "rcon_port": 28962,
@@ -186,7 +186,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #4",
+        "name": "ql-fr-01 #4 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27963,
         "rcon_port": 28963,
@@ -195,7 +195,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #5",
+        "name": "ql-fr-01 #5 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27964,
         "rcon_port": 28964,
@@ -204,7 +204,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #6",
+        "name": "ql-fr-01 #6 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27965,
         "rcon_port": 28965,
@@ -213,7 +213,7 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #7",
+        "name": "ql-fr-01 #7 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27966,
         "rcon_port": 28966,
@@ -222,12 +222,138 @@
         "stats_password": ""
       },
       {
-        "name": "ql-fr-01 #8",
+        "name": "ql-fr-01 #8 #topdog.io",
         "hostname": "46.101.227.252",
         "gameport": 27967,
         "rcon_port": 28967,
         "rcon_password": "",
         "stats_port": 27967,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #1 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27961,
+        "rcon_port": 28961,
+        "rcon_password": "",
+        "stats_port": 27961,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #2 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27962,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27962,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #3 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27971,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27971,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #4 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27972,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27972,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #5 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27981,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27981,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #6 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27981,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27981,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-fra-02 #7 naked-ql",
+        "hostname": "fra.naked-ql.de",
+        "gameport": 27991,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27991,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #1 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27961,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27961,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #2 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27962,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27962,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #3 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27971,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27971,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #4 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27972,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27972,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #5 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27981,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27981,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #6 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27981,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27981,
+        "stats_password": ""
+      },
+      {
+        "name": "ql-ber-01 #7 naked-ql",
+        "hostname": "ber.naked-ql.de",
+        "gameport": 27991,
+        "rcon_port": 28967,
+        "rcon_password": "",
+        "stats_port": 27991,
         "stats_password": ""
       }
     ]

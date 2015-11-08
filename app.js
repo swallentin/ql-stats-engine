@@ -15,7 +15,7 @@ var zmq = require('zmq'),
     },
     elo = new Elo(uscf);
 
-function makeConnectionString(host) {
+function makeConnectionString (host) {
     return ['tcp://', host.hostname, ':', host.stats_port].join('');
 }
 
@@ -27,29 +27,29 @@ MongoClient.connect(url, function (err, db) {
         player_stats = db.collection('player_stats');
 
 
-    settings.servers.forEach(function (server)  {
+    settings.servers.forEach(function (server) {
         var socket = zmq.socket('sub'),
-        address = makeConnectionString(server);
+            address = makeConnectionString(server);
         socket.connect(address);
         socket.subscribe('');
         sockets.push(socket);
 
         console.log('Subscriber connected to', address);
 
-        socket.on('message', function(message) {
+        socket.on('message', function (message) {
 
             if (message) {
                 var document = JSON.parse(message.toString());
                 document.SERVER = server;
                 document.EVENT_TIME = new Date();
 
-                if(document) {
-                    if(document.TYPE === 'MATCH_STARTED') {
+                if (document) {
+                    if (document.TYPE === 'MATCH_STARTED') {
                         // add document to mongodb matches collection
                         matches.insert(document);
                         client.sadd('current_matches', document.DATA.MATCH_GUID);
                         client.publish("match_started", document.DATA.MATCH_GUID);
-                    } else if(document.TYPE === 'PLAYER_STATS') {
+                    } else if (document.TYPE === 'PLAYER_STATS') {
                         player_stats.insert(document);
                     } else if (document.TYPE === 'MATCH_REPORT') {
                         // update mongodb matches collection with match report
@@ -57,7 +57,7 @@ MongoClient.connect(url, function (err, db) {
                         client.sadd('matches', document.DATA.MATCH_GUID);
                         client.srem('current_matches', document.DATA.MATCH_GUID);
 
-                        if(document.DATA.GAME_TYPE === 'DUEL' && !document.DATA.ABORTED) {
+                        if (document.DATA.GAME_TYPE === 'DUEL' && !document.DATA.ABORTED) {
                             var winningPlayerStats,
                                 losingPlayerStats,
                                 winningPlayer,
@@ -69,13 +69,13 @@ MongoClient.connect(url, function (err, db) {
 
                             player_stats.find({
                                 "DATA.RANK": {
-                                    $in: [1,2]
+                                    $in: [1, 2, -1]
                                 },
                                 "DATA.MATCH_GUID": document.DATA.MATCH_GUID
                             }).toArray(function (err, results) {
-                                if (results.length > 1 && results[0].DATA && results[1].DATA )  {
+                                if (results.length > 1 && results[0].DATA && results[1].DATA) {
                                     winningPlayerStats = results[0].DATA.RANK === 1 ? results[0] : results[1];
-                                    losingPlayerStats = results[0].DATA.RANK === 2 ? results[0] : results[1];
+                                    losingPlayerStats = results[0].DATA.RANK in [2, -1] ? results[0] : results[1];
 
                                     players.find({
                                         "DATA.STEAM_ID": {
@@ -84,41 +84,49 @@ MongoClient.connect(url, function (err, db) {
                                                 losingPlayerStats.DATA.STEAM_ID
                                             ]
                                         }
-                                    }).toArray(function(err, results) {
-                                        winningPlayer = results[0].DATA.STEAM_ID === winningPlayerStats.DATA.STEAM_ID ? results[0] : results[1];
-                                        losingPlayer = results[0].DATA.STEAM_ID === losingPlayerStats.DATA.STEAM_ID ? results[0] : results[1];
+                                    }).toArray(function (err, results) {
 
+                                        try {
+                                            winningPlayer = results[0].DATA.STEAM_ID === winningPlayerStats.DATA.STEAM_ID ? results[0] : results[1];
+                                            losingPlayer = results[0].DATA.STEAM_ID === losingPlayerStats.DATA.STEAM_ID ? results[0] : results[1];
 
-                                        winningPlayerOldElo = (winningPlayer.ELO && winningPlayer.ELO.DUEL) ?  winningPlayer.ELO.DUEL : 1200;
-                                        losingPlayerOldElo = (losingPlayer.ELO && losingPlayer.ELO.DUEL) ?  losingPlayer.ELO.DUEL : 1200;
+                                            winningPlayerOldElo = (winningPlayer.ELO && winningPlayer.ELO.DUEL) ? winningPlayer.ELO.DUEL : 1200;
+                                            losingPlayerOldElo = (losingPlayer.ELO && losingPlayer.ELO.DUEL) ? losingPlayer.ELO.DUEL : 1200;
 
-                                        winningPlayerNewElo = elo.newRatingIfWon(winningPlayerOldElo, losingPlayerOldElo);
-                                        losingPlayerNewElo = elo.newRatingIfLost(losingPlayerOldElo, winningPlayerOldElo);
+                                            winningPlayerNewElo = elo.newRatingIfWon(winningPlayerOldElo, losingPlayerOldElo);
+                                            losingPlayerNewElo = elo.newRatingIfLost(losingPlayerOldElo, winningPlayerOldElo);
 
-                                        var winningPlayerQuery = {
-                                                "DATA.STEAM_ID": winningPlayerStats.DATA.STEAM_ID
-                                            },
-                                            losingPlayerQuery = {
-                                                "DATA.STEAM_ID": losingPlayerStats.DATA.STEAM_ID
-                                            },
-                                            winningPlayerUpdate = {
-                                                $set: {
-                                                    ELO: {
-                                                        DUEL: winningPlayerNewElo
+                                            var winningPlayerQuery = {
+                                                    "DATA.STEAM_ID": winningPlayerStats.DATA.STEAM_ID
+                                                },
+                                                losingPlayerQuery = {
+                                                    "DATA.STEAM_ID": losingPlayerStats.DATA.STEAM_ID
+                                                },
+                                                winningPlayerUpdate = {
+                                                    $set: {
+                                                        ELO: {
+                                                            DUEL: winningPlayerNewElo
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            losingPlayerUpdate = {
-                                                $set: {
-                                                    ELO: {
-                                                        DUEL: losingPlayerNewElo
+                                                },
+                                                losingPlayerUpdate = {
+                                                    $set: {
+                                                        ELO: {
+                                                            DUEL: losingPlayerNewElo
+                                                        }
                                                     }
-                                                }
-                                            };
-                                        players.update(winningPlayerQuery, winningPlayerUpdate);
-                                        players.update(losingPlayerQuery, losingPlayerUpdate);
-                                        console.log("win:", winningPlayerStats.DATA.STEAM_ID, 'old elo:', winningPlayerOldElo, 'new elo:', winningPlayerNewElo);
-                                        console.log("loss:", losingPlayerStats.DATA.STEAM_ID, 'old elo:', losingPlayerOldElo, 'new elo:', losingPlayerNewElo);
+                                                };
+                                            
+                                            players.update(winningPlayerQuery, winningPlayerUpdate);
+                                            players.update(losingPlayerQuery, losingPlayerUpdate);
+                                            console.log("win:", winningPlayerStats.DATA.STEAM_ID, 'old elo:', winningPlayerOldElo, 'new elo:', winningPlayerNewElo);
+                                            console.log("loss:", losingPlayerStats.DATA.STEAM_ID, 'old elo:', losingPlayerOldElo, 'new elo:', losingPlayerNewElo);
+                                        }
+                                        catch (err) {
+                                            logger.error(err);
+                                        }
+
+
                                     });
                                 }
 
@@ -132,18 +140,18 @@ MongoClient.connect(url, function (err, db) {
                         // update or create user in mongodb
                         var query = {
                                 "DATA.STEAM_ID": document.DATA.STEAM_ID
-                        },
-                        update = {
-                            $set: document,
+                            },
+                            update = {
+                                $set: document,
                                 $setOnInsert: {
                                     ELO: {
                                         DUEL: 1200
                                     }
                                 }
                             },
-                        options = {
-                            upsert: true
-                        };
+                            options = {
+                                upsert: true
+                            };
 
                         players.update(query, update, options);
                         client.sadd('players', document.DATA.STEAM_ID);
