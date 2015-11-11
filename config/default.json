@@ -278,15 +278,6 @@
       {
         "name": "ql-fra-02 #6 naked-ql",
         "hostname": "fra.naked-ql.de",
-        "gameport": 27981,
-        "rcon_port": 28967,
-        "rcon_password": "",
-        "stats_port": 27981,
-        "stats_password": ""
-      },
-      {
-        "name": "ql-fra-02 #7 naked-ql",
-        "hostname": "fra.naked-ql.de",
         "gameport": 27991,
         "rcon_port": 28967,
         "rcon_password": "",
@@ -340,15 +331,6 @@
       },
       {
         "name": "ql-ber-01 #6 naked-ql",
-        "hostname": "ber.naked-ql.de",
-        "gameport": 27981,
-        "rcon_port": 28967,
-        "rcon_password": "",
-        "stats_port": 27981,
-        "stats_password": ""
-      },
-      {
-        "name": "ql-ber-01 #7 naked-ql",
         "hostname": "ber.naked-ql.de",
         "gameport": 27991,
         "rcon_port": 28967,
